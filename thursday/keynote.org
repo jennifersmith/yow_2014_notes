@@ -1,0 +1,428 @@
+#+TITLE: How did we end up here? - Keynote AM
+
+We are going to offend a lot of people.
+
+When started working, realised the world is not very organised, not
+very good.
+
+* How bad can these things really be?
+
+Surveys- project success rates.  On time/ budget/ ROI.
+
+Most other things don't really matter. 
+
+** Dr Dobbs 2010 survey.
+
+Agile and other methods provide us with some gains but they don't
+provide us with order of magnitude gains.
+
+We don't put up with that kind of quality from consumer electronics.
+
+** Team size
+
+More than ten people it gets really bad.
+
+** Another survey
+
+Standish Group figures even worse.
+
+Gartner says 28%
+
+We are not doing well as an industry.
+
+** Motivations of individuals
+
+** Enterprise software
+
+"Many people, often diificult"
+
+"Dangerous things in new ways"
+
+But most enterprises are obsessed with risk. 
+
+Words program behaviours. 
+
+** The Architect
+
+Normal for the "enterprise architecture" not to the coding. Important
+to understand the business and the limitations of the development.
+
+** Are you selling code, people or 'one-throat-to-choke'?
+
+What are people buying when buy 'enterprise software'. Not the code,
+the people and the expertise and someone to blame when it all goes
+wrong.
+
+Met as customer - when you buying a product, you are buying a team and
+the stuff they specialise in.
+
+** Open source
+
+70% of cossst in maintenance... 
+
+Good for recruiting??? 
+
+** Product Managers
+
+*** MVP?
+
+"By definition this is a product that noone will buy?"
+
+Sucessful projects are never run by people who have a MVP.
+
+** Product Owners?
+
+The people the business can do without get put in your team to decide
+on feautres???
+
+** Technologists are part of the business
+
+"Them and Us" with the business is wrong. We are part of the
+business. The language we use doesnt help.
+
+You should be going to coffee regularly with people not in technology
+side.
+
+Catch yourself saying 'it's them and us' and come back from that
+
+*** Take responsibility for ROI
+
+Do the right thing - change of motivation.
+
+Understand the business as much as you do about technology. Learn
+about customer, terms they use and what it means to them.
+
+Martin was accredited as a bookmaker when working in betting.
+
+That's extreme but should at least do something.
+
+** Agile
+
+"Adult supervision".
+
+Going thru the motions, doing all these things "playing house".
+
+"Water-scrum-fall". Cargo cult mentality - 'if we do a standup every
+day we are doing agile'.
+
+Focussing on feedback - whole point of agile and scrum. Getting what
+those feedback cycles going. Also in identifying what we know/don't
+know.
+
+** More uncomfortable truth...
+
+In every organisation, there are one or two people who are actually
+doing the hard work.
+
+Usually doing it 'outside the process'.
+
+Things get done when people have personal motivation.
+
+*** Bug Triage
+
+"Maximise the number of survivors"
+
+If your project is so bad you need triage, you are broken.
+
+*** "Worse is better"
+
+Detest this... "Less is more". Doing less, doing it better.
+
+** Apple example
+
+Apple products were stable and intuitive. But subtle shift away
+from. 
+
+Gucci quote 
+
+** Travelling light
+** "Leave campsite better than you arrive"
+
+** "Shared mutable state"
+
+That should be some of the most feared words in our industry!
+
+Sharing precious resources in a contended manner, real issues. Do
+crazy stuff like locks. It's a common problem as we have shared
+memory.
+
++ Should only be for systems programmers
+
+** Append-onky, single writer, share-nothing design
+
+Event sourcing microservices etc. datomic...
+
+"If you don't honour this, math will come and get you"
+
+** Amdahl's law
+
+You can't get that much improvement with adding more
+cpus.... asymptotic
+
+If you add 'coherence cost', performance at parallelism getting worse,
+not better.
+
+** Text encoding
+
+JSON, XML, Base64 
+
+"But it's human readable" "Binary is hard to work with"
+
+Actually it's a lot easier to work with.
+
+Spent some time with Tim Bray. Lovely guy but he invented XML and
+... the witch has to burn!
+
+** "Shut up and stop whining"
+
+Learn binary, it's not hard
+
+** Unstructured information
+
+We have a lot of data in unstructured form and it's a goldmine.
+
+If you consume it, why write it out as text again.
+
+... and that's big data (with a smiley poo emoji).
+
+*** A lot of big data coming from system instrumentation
+
+*** Mobile use improving
+
+If we do that in text all the time that's not efficient. I don't want
+my phone going flat.
+
+** Synchronous Comms
+
+We call it 'rest' these days.
+
+Papers written in the 60s saying that these things will go wrong.
+
+"The crystal meth of distributed programming".
+
+It causes coupling in location and time.
+
+A way to measure this, can you cope with a component going down.
+
+*** "Errors need to be first class messages"
+
+Full duplex vs half duplex.
+
+I can use the telephone or a walkie talkie. Walkie talkie 'half
+duplex'.
+
+Doesn't work well in low latency. Seven minutes to get a message to
+mars. You have to get these things async from the start.
+
+*** "Are your micro services on crystal meth?"
+
+Like VB: all the examples are really easy but dont work. Microservices
+can do this if we don't pay attention to the problems.
+
+** Abstraction
+
+Joel Spolsky's law 
+
+Dijkstra : Abstraction is about being precise, not being vague.
+
+We use it wrongly, as a way of committing sins
+
+*** ORMs
+
+Take two perfectly good systems - set theory in relationaal db, and
+fp/oop and we tie them together.
+
+"Platform independent" - you spent a lot of money on a database and
+you don't want to use the features??
+
+** Functional Programming
+
+*** Biggest problem with functional programmming?
+
+"Functional programmers"
+
+This is a weird group. Some of the behaviours, language,
+elitism. Level of confidence they will talk about stuff.
+
+Behaviour of functional programmers shocking.
+
+*** Functional programming is not the answer to multicore
+
+News flash: It won't. 
+
+*** STM was a failed experiment!
+
+It won't solve the problems. It does not scale. USL will hunt you
+down.
+
+*** No Mechanical Sympathy?
+
+"Technical Masturbation".
+
+Currying as a means of form validation.
+
+Not delivering on the promises.
+
+ "... software is not constrained by the physical world ... don't be a
+ douche" - FP Fanboi
+
+Would you go to a VC and say "we didn't deliver because sofware is not
+constrainted by the physical world".
+
+Computer science is an applied subject.
+
+*** Obsessed with ponys!
+
+*** Genuine brilliance in functional programming
+
+But it won't transfer over with all the elitism going on.
+
+Collaboration and great things can happen...
+
+John Carmack's work ,  work on Aeron the speakers have done.
+
+You don't get that with being an elitist.
+
+Think differently, challenge long held assumptions.
+
+** Cloud computing
+
+*** BFOH
+
+Cloud computing has come from our IT departments being horrible.
+
+But BFOH was case of wrong motivations... keeping stability.
+
+If you still have a 2 month aq time, it's not a cloud!
+
+"Business Prevention Office" - a lot of these people don't understand
+is opportunity cost.
+
+Every time you do something, the things you don't do are the cost.
+
+Adrian Cockcroft, "Optimise for speed of delivery ... reduce costs"
+
+High speed trading gets this... 
+
+*** Virtualization
+
+Virtualisation has some serious issues. Adds a whole overhead to
+things. 
+
+*** Docker is the paas killer
+
+Docker changing things. Docker changed the game, containers allow us
+almost the 'best of all worlds'. Benefits of being 'close to the
+metal' 
+
+Jigsaw tried to solve containerisaiton and modularisation, docker can
+do containerisation.
+
+** Throw hardware at it, development is too expensive
+
+The free lunch really is over. People are being sloppy, and the
+sloppiness is not working any more.
+
+Energy and power saving as motivations.
+
+*** Loops
+
+When we executing code, a number of little caches. Big complicated
+loops will be continually churning. Over branched code, returns, dont
+fit in it.
+
+Code must be simple and composable. This is where the goodness of fp
+comes from.
+
+*** Cache sub-system
+
+Mulitiple cache layers. You dont need to know the
+details. Abstractions. They take three bets:
+
+- things you used recently you will use again
+- things near to oneanother will be used together
+- Pattern based - predictable access to the code, allowing prefetch.
+
+Accessing in 1/3rd of nanosecond to access register, 1 to l3 and * 3
+to go to main memory.
+
+Same caching behaviour in file caching, etc. 
+
+*** Memory sub-system performance
+
+Bandwith improving, latency is not... big pipes but only a trickle of
+water.
+
+What means we cant use shared mutable state. Actors, agents, message
+passing. That is how hardware gives us the good results.
+
+Even on local machine, is a distributed system.
+
+*** What does that mean for software?
+
+**** Who has heard of omni-path?
+100GB /s between nodes, standard intel arch.
+
+Fundamentally about message-passing. They will be distributed
+systems. Will *not* be fast in dealing with shared memory.
+
+** Diversity
+
+We have a serious lack of diversity.
+
+"Testosterone driven development" "Technical masturbation"
+
+Graph: "What happened to women in computer science?"
+
+Carnegie Mellon studies. Drop out rates in women greater. Common
+pattern, people who had a home computer vs people that didn't in the
+1980s.
+
+When you reached university, the people without computers
+struggled. Mistake in courses assumed that had prior knowledge.
+
+"Have not" was a marketing problem. Marketing to young teenage
+boys... got to get over the gender bias with toys. Media industry has
+broken, their job to fix but we can fix.
+
+Ada Lovelace and Grace Hopper. 
+
+*** "Farley's law"
+
+"As soon as you realise most people don't know what we are doing..."
+
+If we start to admit we don't know what we doing, maybe will start to
+get better
+
+
+*** Coaching and apprenticeships
+
+We don't coach. 
+
+Grace Hopper quote, "... other than building the compiler, training
+young people"
+
+We have to encourage people to try and do things better.
+
+** In closing
+
+*** The greatest achievement of the human race?
+
+- Man on the moon? - Curing small pox?
+
+What's behind these... it's the scientific method? 
+
+That learning loop, without we wouldn't have gone to the moon.
+
+grounded in evidence and numbers.
+
+We see people arguing all the time... but why don't we just measure!
+
+Scientific method comes hand in hand with evolution.
+
+The things that survive are about adaptability. Not strongest,
+fastest, ability to change. 
+
+Can't have the fixed opinion. Will constrict us.
+
+
