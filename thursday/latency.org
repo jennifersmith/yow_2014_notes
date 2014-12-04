@@ -1,0 +1,125 @@
+#+TITLE: How NOT to measure latency
+
+* The "Oh Shit" Talk
+
+Azul known for 'solving' garbage collection. 
+
+Learned a lot about how people think about latency.
+
+Tooling built because thinking about latency wrong 'in our way'.
+
+* Motivation
+
+Latency - reaction time/response time/latency
+
+When we talk about latency, we actually mean the behaviour. It's not a
+number.
+
+Latency = how long _one_ thing took
+
+Can't communicate a million different results.
+
+We care about how it behaves. More than "A common case was X" - that
+is only a tiny sliver of information.
+
+* What do you care about?
+
+Care about worst case? 99.9% ? 
+
+How about the fastest 
+thing and nothing else? 
+
+That's what a benchmark is!
+
+Better 50% ?  That's what the Median measures. 
+
+Every percentile all it does is tell you about specific part of the
+data - sis that part of the data what you care about?
+
+* Latency 'wishful thinking'
+
+We wish the math we did at school applied to it.
+
+Wouldn't it be nice if latency a normal distribution... 
+
+or "If 99% behaves, how bad can be rest?
+
+
+could have 99.9999 orders of magnintude higher latesncy
+
+The parts of the system that arent mesasured will be higher - the
+latency behaviour evolves to meet stateed requirements.
+
+* Good news everyone!
+
+Can learn a lot from the shape - if gaussian would have no nteresting
+info.
+
+* Statlling and queueimg
+
+** What does queueing latency look like?
+
+10k fixed base, oacciasona burts of 500 msg
+
+(diagram)
+
+* People in read world face this.
+
+- Kellaybyte tweet.
+
+* Real world 'figuring out of things'
+
+Monty Python and the holy grail.
+
+"What else floats?"
+
+This is how we debug stuff.
+
+"What else floaats" debugging
+
+* Intuition
+
+Need to unlearn
+** Response time s fn of load 
+* Latency bheaviour comlpeged with other gogr.
+
+
+* Dont' go any faster!
+
+* Coordinated omission porobl.
+
+"**ccidentially conpsricacy,
+
+
+Meaure later in to
+
+99.99% status stil the standard.
+
+Term:Cooidniate Omission
+
+** JMeter misreports
+
+** Cassandra
+
+correcting for coordinated emmision 
+
+
+Need to go back and throw away all your data.
+
+* Suggestions
+
+When you have a sytsem to get numbers from system, test the
+system, not use jmeter. good load tool but the numbers dont make
+sense.
+
+Run your measurement against artificial systems with hypotheical
+pauses behaviours.
+
+Never use Std deviation
+
+ALWAYS measure the max time - consider what it means, be suspicious.
+
+HdrHistogram .... 
+
+
+
