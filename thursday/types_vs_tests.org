@@ -1,0 +1,253 @@
+#+TITLE: Types vs Tests
+
+Hope to be one of the people who makes it a bit friendlier ... not the
+one that called Martin a douchebag.
+
+Been yelled at, been told should do horrible things because I like
+type systems.
+
+I started programming in the 80s... no TDD but there was type systems.
+
+Used to work for ThoughtWorks... TDD day to day. This is where I
+started having problems.
+
+How are types + tests relate to one another.
+
+When I am in a bar and I start conversation about type
+systems... people either fall asleep or get really really angry.
+
+Hecklers - please don't tell me I am wrong before I start.
+
+* Assumptions
+
++ All worked with programming languages, at least one with a repl
++ There are multiple type systems... not just java!
++ Spend more time reading code than you write it.
+
+* Craftsmanship
+
+Top 10% , care about your code, want to make it cleaner, less error
+prone, so next person working with it .
+
+* Quotes
+
+Martin Fowler: "When in doubt, create a type"
+
+Yaron Minsky: "Make illegal states as unpresentable"
+
+M Feathers: "Legacy code is code without tests - but he writes
+signature first"
+
+Stu Halloway: "Compilation is weakest form of unit testing"
+
+Jay Fields: "Given a good test suite the roi doesn't jsutify static
+typing'.
+
+* What is a type?
+
+A type is a form of abstraction. A way to think about our code, to
+make it more provable. To not put the square thru the round hole.
+
+** Logic and code should be one in the same
+
+Lectures on the Curry-Howard Isomorphism
+
+Nobody read it, but we all believe in connection in logic and code
+
+** We are bad at logic
+
+... humans are bad.
+
++ Type signature is a theorem, function definition is the proof: We
+  are writing provable code by this.
+
+** What good for?
+ 
++ Reduce bugs
++ Make code run faster - well... it could anyway
++ Define interfaces
++ Compliance - tells you whether your code is 'consistent'
++ Document model
+
+** Models
+
+How we think about our code, anything.
+
+Models fail to deal with complexities. Models all fail. But you have
+to have them to think about things.
+
+In your code, documenting model with your types.
+
+** Tests
+
+Working for TW, using TDD. Such a big thing three years ago. Only now
+'tdd' is dead. But if we don't like types and compilers suck... what
+kind of world.
+
+Tests do the same stuff types do... apart from we dont make code run
+faster or define interface.
+
+Test "Logic" - the logic in your client's head. That you cant test
+with your type system.
+
+*** Functional tests
+
+Proves the high level things.
+
+*** Property based testing
+
+Like quick check... this is a cool tool!
+
+Write a model about your system and it will write tests for
+you. (generative).
+
+Great because tests are expensive : read them, write them ,maintain
+them 
+
+*** Unit tests
+
+*** REPL tests
+
+This is how I started developing code. Use the repl every chance I get
+to figure out algorithms.
+
+*** How do I know if my tests are correct? 
+
+If you cant prove you are writingthe right tests if cant prove the
+code.
+
+Chicken and egg.
+
+What is balance with FP, types, tests.
+
+nobody has any idea!
+
+All the problems are not yet solved - if you have a question, chance
+that other people still answering.
+
+Met up with people, how can we test this. We all disagreed based on
+where they were coming from. 
+
+But realised, I want it to be easy, I want to be lazy. I want cleanest
+possible code ... with minimal effort.
+** Science
+Did an experiment. What experiment could we do to come up with answer?
+
+Code Kata. OCR code kata - accept strings of data, 27 chars per digit
+, translates into digits.
+
+Good because it tests boundaries - the scary stuff at the edges that
+is hard to prove/type/test.
+
+Read in the numbers and validate checksum.
+
+(google 'Code Kata') 
+
+Tried the same thing thousands of times, every language we could
+find... unit testing after the fact (which is what  alot of people do
+anyway).
+
+Repl driven, property based testing, 
+
+*** Analysis
+
+Don't have results, but analysed our code, other people's code.
+
+Found simple pattern matchers in a lot of the code.
+
+multi line strings.
+
+Types "AccountType" Valid and Invalid.
+
+I thought would write all types... but then I learned I wanted to
+remove some.  Some didn't feel right - they weren't easy to work with.
+
+Lessons:
+
++ Tests validate what the types are not able to prove
++ Property based testing: where you have a 'forAll', maybe a type
+  needed?
+
+
+Tests helped a lot. That was not something I got aaway from. My
+testing was inevitable. 
+
+But had a load of tests that have to maintain, expensive. I decided
+that after I got the design good, I would add the types and then
+delete the tests that were being validated by type.
+
+Test with a bunch of numbers in it... can I delete one of these tests?
+
+Magic numbers and magic strings happen all the time. Afraid to delete.
+
++ Types save me from thinking of certain kinds of test
++ Easy to get lost with no delivery
+
+... don't    do these experiments on your client's time!
+
+*** Syntax matters...  but depends on need...  
+
+If the code isn't life or death -  which do you want to maintain? Soln
+with complete certainty but hard to maintain, or somethng that easy to
+understand.
+
+*** No 'perfect language'
+
+No language I have found to make all illegal states completely
+unrepresentable.... even OCaml.
+
+*** Types scale better
+
+*** Distributed teams, open source, regardless of type systems
+
+example inputs/outputs without test suite.
+
+*** Short lived codebases mean little value for types
+
+*** Types make refactor easier
+
+*** Modularisation
+
+* All type systems not created equal.
+
+What looking for?
+
++ Sum types: Inclusive OR and pattern matching
++ Product types and currying 
++ Extensiblity - having the tools the language designers had
++ Nominal vs structural typing: most languages have structural typing, 
++ Type inference : incomplete + epxressive or complete but
+  weak... tradeoff there allowing to write code faster or slower... 
++ Dependent types... in a perforect world!
+
+Curious to see how dependent types will help us
+
+* Tests and types are a spectrum
+
+I believe the best code is towards types, 
+
++ Types = for all, Tests = There Exists
+
++ Stringly typed programming is horrible! If you have a static type
+  checker, use it!
+
+In future, type level programming will be indistinguishable from rest
+of code - writing different language for typing than writing the code.
+
+When we use same language for model and metamodel... then we can get
+further.
+
+* Simulation testing
+
+With simulant...  property based testing of the system - input as a
+database, output as a database. Make an assertion on output.
+
+* Mutation testing
+
+What mutations can I make to codebase that wont break my tests?
+
+Could be value in seeing this.
+
+* Questions
+
+We don't have capability to say "this code shouldn not compile"
