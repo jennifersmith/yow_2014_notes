@@ -50,4 +50,270 @@ Firmware moved from bottleneck to business enabler.
 
 * Theory of constraints
 
+Identify the bottlenecks and constraints and increase the rate of flow
+thru that.
+
+Common constraints as org gets bigger
+
+** Integration Problem
+
+Percentage of release cycle spent "hardening"
+
+** Deciding what to build
+
+Way more big problem than people give credit for. Ties organisations
+in knots.
+
+2/3rds of fetaures in custom software not used.
+
+50% of features requested  don't deliver. Filling our software full of
+guesses, improve complexity.
+
+Deciding what to do. Trace that back in software teams and you find
+extremely convoluted process.
+
+Always ends up attacking how organisation things and allocates
+organisation and capacity.
+
+** Getting teams to work together
+
+Autonomous teams that don't want to work together.
+
+** Time + energy and initiative of bright, creative people
+
+49% of jobs are softare only 21% majoring in it. There is not enogh
+people heading towards these jobs.
+
+Pretty much 30% of people are engaged in their work, 50% just showing
+up, 20% who are actively disengaged.
+
+
+Maybe that's why nobody going into software. It's not looking that
+attractive as a job.
+
+** The scaling constraints
+
++ System complexity
++ Organisational mindset
++ Multi-team cooperation
++ Challenging work
+
+The most engaging thing for people is to be constantly challenged.
+
+* System complexity
+
+Smashing a complex system doesn't work. But poking it repeatedly does!
+
+"Continous delivery is all about poking" :) 
+
+If you want a stable codebase, it's all about poking. The bigger and
+more complex it is the more important small changes are. 
+
+All these big chagnes we try and do is trying to go against complexity
+theory
+
+** Branches are evil
+
++ stability
++ rapid fb
++ reducing cost
++ increase flexibility
+
+*** Teams that release together have to work together
+
+*** "Staging pipeline" takes a while
+    
+* Organisational mindset
+
+Big companies who want to "go agile".
+
+But you have to start by thinking of how the organisation works.
+
+IT mindset and the product mindset.
+
+Do you refer to "The business" ?
+
+You are not a product company if you say "the business"
+
+"Order taking development team" vs a Responsible engineering team
+
+Success = cost, schedule, scope vs Delighted customers
+
+Tough tradeoffs made by planning process vs market realities
+
+Cost center mentality vs profit center mentality
+
+Who is gonna win? 
+
+** Structure organisation to match the system arch
+
+Shared code - one team
+Team too large - break dependencies
+
+Shared system test or release - then one group.
+
+Group too large - change the architecture? 
+
+
+... aka conways law :)
+
+Putting agile teams on a monolithic codebase... agile wants to change
+stuff, monolithic code doesn't want to change. Huge dissonance.
+
+** Capacity allocation for portfolio management
+
+Think about how allocate capacity.
+
+Product capacity:
+
+"Here's my capacity..." Now allocate by percentage. Not some big
+organisational committee at the top.
+
+tradeoffs between products, not product areas.
+
+** Replace governance with product management                      :research:
+
+Marty Cagan - "Magic happens when ... interact directly with customers
+in their native habitat" 
+
+Valuable, useful, feasible
+
+But what we normally do is have a product owner argue with a bunch of
+junior developers.
+
+You need good fights! 
+
+* Multi-team cooperation                                           :research:
+
+** Cooperation and autonomy                                        :research:
+
+"Six Simple Rules" Yvew Morieux (also ted talk) 
+
+Cooperation requires accomodation. So helping other teams has a cost.
+
+If only one party bears the cost of accomodation, then cooperation
+fails.
+
+Monopolies (by defnition) don't have to accomodate.
+
+The monopolies: Everybody loves to hate... HR? Marketing? IT Ops? 
+
+When you hate them... it's because they dont have to accomodate you,
+you have to accomodate them
+
+Another kind "autonomous teams".... we don't have to accomodate those
+guys because we are autonomous.
+
+We see this because we started by getting teams to work in agile:
+small, autonomous with shared goal. 
+
+Autonomy detracts away from cooperation... 
+
+*** Cooperating teams                                              :research:
+
+Getting teams to work _Together_ : that's the thing we haven't figured
+out.
+
+Example: Pixar have hit after hit. Team of 200 people. None of this 7
+plus or minus 2 stuff! 
+Sub teams: a product team is the number you have to put product on
+market.
+
+"Everyone is invested in helping everyone else turn out their best
+work." - Creativity inc
+
+One team, multiple sub teams, one shared goal.
+
+If you can create an architeture where teams dont have to work
+together, good.
+
+*** Who is responsible for creating value?
+
++ The "biz"?
++ The Product owner?
++ The team?
+
+"Not me" vs "All of Us" 
+
+We work together, nobody succeeds unless everyone succeeds.
+
+*** Military model
+
+You have squads, platoon - 30 to 40 people.
+
+Then platoons form into company.
+
+"Command Intent" : A conscise expression of the purpose, the desired
+results and the expected team progress toward achieving the desired
+end state.
+
+Company level: Undetstand command intent
+Platoon level: Maintain situational awareness (of other
+
+Adapt to make sure the company reaches the end state
+
+* Challenging work
+
+That's the real reason people come into work.
+
+Mastery and purpose  (autonomy fair enough).
+
+Stop having "Delivery teams". This has to stop.
+
+
+Move towards "Problem Solving" teams
+
+
+Give real, serious engineering problems to teams and let them figure
+it out. I didn't have stories, or requirements or any of that
+nonsense.
+
+Just give problem to solve.
+
+
+Let our good software engineering teams solve problems...
+
+** Impact driven development 
+
+
++ Work backward from impact : WHY
+
+"Start with Why" 
+
+If you don't create an enviornment where people can be successufl and
+know why doing it, 
+
++ Understand desired impact
+The dev team needs to understand the measure of success 
+
++ Prove the impact is being achieved (b-m-l)
+
+Give them problems to solve, not stories to implement.
+
+* Case study, government - gov.uk
+
+Health care automation
+
+Conservative MP decided to go to estonia - they have the best
+automated gov in the world (because they startedin 1995 with not a lot
+of money).
+
+Based on that model, they created teams. 
+
+Gov.uk : that little section of the government we will automate...
+discovery, alpha, beta, live.
+
+Team charter:
+
++ Service vision
++ Quantifiable goals
++ KPIs showing how will meet user needs
+
+General principles of governance... 
+
+With this they have ffew hundred people, design awards, ease of use of
+website.
+
+Start with metrics and let th team figure it out!
+
 
