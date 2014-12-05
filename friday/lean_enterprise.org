@@ -1,0 +1,285 @@
+#+TITLE: the lean enterprise
+
+
+Moving away from taylorism managemnt paradigm.
+
+Idea of a cadre of managers breaking work down into bits for the
+workers to do
+
+Move to a different paradigm, Deming, Ohno etc. 
+
+Focussed on experimenting, finding right way to do things. Job of the
+leaders and managers to enable them to do this.
+
+* Terms
+
+Lean: definition from Womack and Jones... basically "Wot Toyota Does"
+
+Enterprise: complex, adaptive system of people who share common
+purpose.
+
+in a complex system, nobody has perfect information.
+
+we can't know the results of our actions, side effects. Often the lean
+practices designed to create side effects.
+
+* Survey Forrester + Thoughtworks
+
+Asked how organisations decide what products to build.
+
+"Highest paid opinion" 13%
+
+24% of people in large established businesses use a financial/economic
+model. 
+
+The most inefficient way to test your hypothesis that a product will
+work is to build it!
+
+* Water-scrum-fall
+
+... scrum makes no difference to lead time from 'golf course' to the
+last mile.
+
+Now you are taking orders standing up.
+
+This is the reality of many 'agile' organisations, the agile only
+touched one part.
+
+* Lifecycle of innovations                                         :research:
+
+Hockey stick is only the first part.... 
+
+Geoffrey Moore, Crossing the Chasm 
+
+The "Chasm" - only jumps that if gets enough popularity, otherwise
+dumped on floor when next shiny thing comes along
+
+The thing you are making money with now is not gonna make money in
+future.
+
+Waterscrumfall is a bad way to get this
+
+* Three horizons                                                   :research:
+
+"The Alchemy of growth"
+
+H1,H2,H3
+
+H1 - bread and butter
+H2 - like startups everyone uses but dont make money
+H3 - mad crazy stuff you havent proved yet
+
+Most enterprises dont really focus on H2/H3 
+
+Google etc put 60% into existing business, 30% h2, 10% h1
+
+The way you run things in the three horizons is completely different.
+
+Explore vs Exploit
+
+"Innovation Labs" ... measuring metrics wrong, crushes innovation
+
+* Water-                                                           :research:
+
+Studying, analysis, market research, estimation... these are more or
+less worthless.
+
+"How To Measure Anything"
+
+Most things we measre have zero information value  but are easy to
+measure.
+
+
+First thing to realise... most ideas fail. Our aim is to eliminate the
+bad ideas.
+
+** Optionality
+
+Nassim Taleb, Antifragile - you can't predict the future. Have a bunch
+of different options and see what one works.
+
+You can't just do '4 big projects a year'
+
+Invest a little bit in a few little things. Apply optionality.
+
+Limiting resources
+
+** Build-measure-learn
+
+You have a limited runway and the key 'productivity metric' is how
+fast can we learn.
+
+
+Instead of analysing, build a prototype to see if something is
+valuable.
+
+That's how you manage horizon three.
+
+* Survey: What influence does your software provider have?
+
+42% treat IT as a service... an order taking service.
+
+43% as a partner, 14% driving from technology
+
+"IT is not a competetive advantage, it's a utility" 
+
+* IT performance                                                   :research:
+
+2014-devops-report (puppetlabs?)
+
+
+Measured organisational outcomes and profitabiliy, more high
+performant IT
+
+
+Measuring IT perf: lead time and frequency, stability measures
+(restore time and change fail rate).
+
+
+High performers achieve both increased thruput and stability. It's not
+zero sum game.
+
+** Highest correlation with IT performance
+
++ Configuration in version control a higher indicator than code
++ Alerting 
++ Breaking up into small changes, checking into trunk
++ Dev/ops collab
+
+Confirmation bias perhaps !?
+
+** Top predictors
+
++ External reviewing doesnt work - data showed that having external change
+  approval reduces thruput but doesnt increase stability. But _peer_
+  reviewing (pairing, desk reviews, lightweight) - much higher
+  throughput, same stability
+
++ Version control and proactive monitoring: no suprise
+
++ high trust culture, dev ops relationship
+
+We measured the culture... 
+
+The highest impact on org performance are job satisfaction, net
+promotor score
+
+
+The biggest predictor of job satisfaction was culture.
+
+** High trust cutulre                                              :research:
+
+"A Typology of Organizational Cultures" - Ron Westrum 
+
+Generative, bureucratic, pathological.... generative had the 'best
+performance'
+
+These measure information flow - how does information flow through the
+organisation.
+
+Same thing that predicts safety outcomes in aviation and healthcare
+predicts IT productivity.
+
+Important aspect is how we deal with failure: scapgoating or enquiry.
+
+*** Failure
+Failure: we always act with imperfect information, that's how bad
+decisions made.... conduct blameless postmortem. Find ways to improve
+the system.
+
+"Retrospective prime directive" is a statement that we are working in
+complex adaptive systems.
+
+High perf organisations create disaster scenarios to do blameless
+postmortems... google have a whole department.
+
+Amazon run 'game days' where they turn off data centres etc.
+
+** Changing culture                                                :research:
+*** Nummi
+Nummi - freemont assembly plant. Worst performing, union and
+management comms breakdown - deliberate sabotage.
+
+Shut down and chose for joint venture with GM and Toyota.
+
+Union workers convinced Nummi to rehire them. They trained in TPS. In
+three weeks same people were creating cars at higher quality. Same
+people.
+
+
+We have a thing about 10x developers and hiring right person. But
+what's important is the system.
+
+Deming "A bad system beats a good person..."
+
+
+This american life  episode on Nummi 
+
+
+Difference is people doing work have power to affect the system.
+
+*** Toyoda automatic loom type G
+
+First loom to break when something goes wrong 
+
+That's like CI !
+
+
+*** HP Laserjet firmware team                                      :research:
+
+critical path for new printers
+
+substancial investiment in test automation gave them a massive uplift
+in innovation 
+
+A Practical Approach to Large-Scale Agile Development - Gruver, Young
+... 
+
+** Improvement kata model                                          :research:
+
+(From Toyota Kata book) 
+
+
+Continuous delivery emerged as a bi-product of continually trying to
+improve what were doing.
+
+
+*** Driving product development                                    :research:
+
+You can apply this process to product development.
+
+Gojko 's talk on impact mapping... break down the goal, what are the
+hypothesis.
+
+Have a problem with the word 'requirements'? Who's requirements are
+they? Users? Users don't know what they want!
+
+Guesses or hypotheses instead. "We believe that [x] for [these people]
+will ahceive [this outcome]. 
+
+We will know when we are successful when ..." 
+
+Jeff Gothelf 
+
+
+**** Do less                                                       :research:
+
+
+"Online experimentation at microsoft", Kohavi et al 
+
+This is reason that Amazon invested in continous delivery... so they
+could run experiments.
+
+
+* Amazon rec engine story                                          :research:
+
+early-amazon-shopping-cart - Greg Linden 
+
+Building culture of seeking objective test, everyone... key to
+innovation
+
+
+
+
+
+

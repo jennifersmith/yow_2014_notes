@@ -1,0 +1,199 @@
+#+TITLE: 5 years of metrics and monitoring
+
+* What's gone well
+
+** Established a pipeline 
+
+collection - storage -checking - alerting
+
+
+With graphic off to the side talking to the storage layer.
+
+Aggregation as an ancilliary system gathering events and trends
+
+*** Data collection
+
+collectd + statsd for OS/app level to get interesting metrics out
+
+*** Storage                                                        :research:
+graphite won 'storage' - also opentsdb and influxdb  
+
+ Influxdb a 'time series' database
+
+
+*** Aggregation 
+
+We wouldn't have needed a tool like riemann a few years ago. 
+
+** Alert fatigue
+
+Become a recognised problem - taken from the medical term, too many
+alarms going off, too hard to distinguish between what is 'normal' and
+what is important.
+
+
+** Cottage industry 
+
+Alerting space in particular.
+
+Tools like pager duty. Taking alerts and routing to right people, on
+call rosters, 
+
+VictorOps, OpsGenie
+
+Also seeing increased analytics and the personal affect of alerting
+and monitoring.
+
+Other really interesting SaaS tools that have popped up.
+
+If willing to invest in open source, you can do aamzing stuff. But if
+you wanna do it quickly check out one of these.
+
+** #monitoringsucks
+
+Born out of ranty blogpost. John Vincent's blogpost channelling all
+rage about monitoring.
+
+[[http://github.com/monitoring-sucks/tools-repo][Monitoring sucks]]
+
+Series of interesting metrics
+
+*** If you can only choose one metric for your business  what would it be?
+
+** Monitorama                                                      :research:
+
+... sprung up from the devops and monitoringsucks thing... a
+community/conferences to talk about stuff.
+
+** What we are doing wrong - graphing and dashboards
+
+Tons of graphing and dashboarding out there. The hardest problem right
+now.
+
+Problem is that we are not thinking about the usability and baking in
+mistakes into these tools.
+
+*** Line graphs + strip charts
+
+Time series line charts you always see.
+
+Then you add more and more series in and it becomes more and more
+difficult to see. 
+
+Strip charts are The php hammer of graphing.
+
+*** What can data tell us? 
+
+It's not problem with tools... it's the way we using them.
+
+The problems we have are not addressed by strip charts.
+
+
+**** The Elements of Graphing Data (book, 1990s, Cleveland)        :research:
+
+Bounding boxes with x labels. 
+
+Colour. The brain is a differential colour engine. It works out colour
+based on the other colours around it.
+
+Maximum 15 colours on screen (fewer in print). 
+
+8% of male population are colourblind.
+
+Adjust saturation, not hue - improve legibility.  
+
+Use a minimal hue to call out data .
+
+"Fucking pie charts" - people can't compare angles
+
+* What did we learn?
+
+** Democratization of graphing tools
+
+"Scratch our itches" - can build different type of viz.
+
+But: same poor UX issues.
+
+Until we improve our visual efficiency.
+
+** "Nagios is here to stay"                                        :research:
+
+Survey results say nagios ...
+
+Why ? Inertia!
+
+No compelling alternative. But other tools like sensu 
+
+There is still complexitiy.
+
+Look at Icinga and Naemon - particularly if invested in nagios.
+
+** We don't really know stats all that well                        :research:
+
+Poor stats literacy has implications for graphing and for checking.
+
+*** Graphs
+niels bohr quote "partialling overlapping and always somehow
+contraditory..."
+
+Different views, or grouping the data in histograms, percentile
+distribution.
+
+D3 and NVD3
+
+*** Checks                                                         :research:
+
+Checks are also affected. Checks : numbers, strings, behaviour.
+
+Anomoly detection.
+
+"Ascombe's Quartet" 
+
+Abe Stanway's "Mom! My Algorithms suck"
+
+"STatistics for anomoly detection" (Both from monitorama)
+
+** Testing                                                         :research:
+
+selenium, webdriver, new-relic synthentics...
+
+"Monitoring is CI for production"
+
+Traditional CI feedback cycle : checkout build test notify
+
+This, "can I see my app"
+
+serverspec  - rspec bindings for asserting behaviour of server????
+
+* Summary
+
+buiding new tools, formalising relationships + measring human impact
+
+** Next
+
+stabilisation, emerging standards, exploiting parallells and mitigate
+human impact
+
+
+Mine data out of pager duty - recovered without incident, real, etc.
+
++ Ops are enablers not gatekeepers
++ We won battle - devops about breaking that 
+
+Ops team don't own ops... but all our teams are focussed on folks that
+work in operations.
+
+A monitoring system needs to be more available and scalable than The
+thing that it is monitoring.
+
+*** Cultural
+
+Listen to the needs of the end-user. Providing monitoring as a
+service.
+
+Ship checks and config with your apps - yelp do this.
+
+Why aren't more people doing this? Monitoring to be more 'saas like'?
+Can use saas as an accelerator.
+
+

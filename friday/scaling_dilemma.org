@@ -1,0 +1,53 @@
+#+TITLE:Scaling dilemma
+
+* "If agile is good, scaled agile must be better?"
+
+- how do we ensure teams work on the right stuff etc.
+
+These are the Wrong Questions!
+
+It's not about agile, you don't measure agile, you don't do
+agile... you solve business problems.
+
+* Focus on business problems
+
+At HP they just stumbled on and reinvented these things - didn't know
+concepts of agile.
+
+When come across companys who invent this stuf for themselves, often
+better than what 'agile' is doing.
+
+** HP Laserjet firmware
+
+Costs out of control... couldn't add people fast enough. Firmware
+bottleneck for new products.
+
+Nothing got done because all the time was eaten up on other things.
+
+* Ask the right questions
+
+You can't ask "how do we convince executives"?
+
+"What if we use the same chip for all printers?" - engineers said
+crazy, but wouldn't it be awesome.
+
+Then one engineer said that it might be possible, lot of work.
+
+How can we integrate early and often? How can we create code always
+releasble?
+
+
+Asking the right questions, simplifying architecture, single
+chip. Rapid feedback to developers.
+
+Emulators and simulators - amazing job to run integration tests every
+day.
+
+Increased market flexibility - didn't lay everything out for The next
+year. 
+
+Firmware moved from bottleneck to business enabler.
+
+* Theory of constraints
+
+

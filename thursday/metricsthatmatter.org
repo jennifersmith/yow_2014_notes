@@ -1,0 +1,71 @@
+#+TITLE:Metrics that matter
+
+
+Scaling agile, making agile bigger... kind of lost the point.
+
+Not about agile succeeding, it's about getting ourselves to a better
+place.
+
+* What do we measure?
+
+Cascading down from design to dev to test 
+
+
+Agilists decided to be iteration based.
+
+Function points -> story points, velocity and cycle time
+
+How fast are we and how much are we delivering.
+
+Whether it's working software or not... is it helping us?
+
+
+We think "more" is a good thing.
+
+That's not even a bad practice, it's a dangerous practice.
+
+Work in healthcare, areospace. For them, the last thing they want is
+more.
+
+The more stuff, the more defects. 
+
+Next time you get on aeroplane, do you want the software team to have
+been measuring how many features?
+
+We bury the essential with the inessential by too many features.
+
+* Are you checking which features being used, are tthey being used?
+
+We look at what (this company) built over the years.
+
+What % of those features got used? 5%
+
+But that's because they were incentivised to create features.
+
+* Why do we measure these things?
+
+"Cos they are easy"
+
+"It's the way we always do it"
+
+Massive block between more outputs are a good thing... rather than
+what we want to measure, more outcomes
+
+* Outcome.
+
+Outcome is a weird word to non-native speakers.
+
+Outcomes are what we want to get to, outputs are how we get there.
+
+Otherwise, we help you fail faster.
+
+"Agile, we help you kill people faster"
+
+Thinking about the outcome and finding the shortest path to geththere.
+
+* Moebius ?
+
+Focus on planning and delivery  as two loops
+
+
+

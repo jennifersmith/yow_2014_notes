@@ -1,0 +1,164 @@
+#+TITLE: It's all multimedia now so what's next?
+
+Past, present, future, services, networks and tools
+
+* Background
+
+EE,CS,Music
+
+Learnt CS to make better synthesisers.
+
+Turned onto lisp and realised that programming languages dont suck.
+
+** What I develop
+
+Music, AI, high-level tools - musician score management.
+
+Smalltalk. Collection of editors and browsers for different kinds of
+view of different kinds of data
+
+"Bird Genie" - Shazam for birds.
+
+* The big picture                                                  :research:
+
+"UK Future Internet Strategy Group" Mostly mundane report but some
+good ideas 
+
+Future not just bigger and faster but there are some qualitative
+shifts.
+
+The difference between the next big thing and what we have now is
+going to be BIGGER than the difference between the 60s and the 80s
+
+* Moore's law again
+
+Lots of things have changed... but UX have not. LAN/WAN speeds are
+improving, but screen sizes not yet
+
+Basic UI stuff haven't changed at all.
+
+* Services, networks, tools
+
+** What is the computer platform?
+
+Next generation will be a mix of hosts - embedded things + toasters +
+laptops 
+
+"Host du Jour" 
+
+2000 "The digital hub" - Apple.  Now you plug your 'hub' into things
+instead of the other way around
+
+I/O devices define services - guitar effect box made to plug into the
+phone
+
+Co-processors : dedidcated audio processors. Programmed in terms of
+digital studio effects.
+
+How about a search engine as a co-processor?
+
+
+** What is an app?
+
+We used to call them 'applications'.
+
+Promise of WIMP - user centric event driven compared to the old world
+of waitng for input and running batch process.
+
+Promise of ubiquity...
+
+What is coming?
+
+New categories of app... Used to be reporting/word processing, now
+fitness, lifelogging, telepresence
+
+"Waze"  - social network fed traffic monitor map.
+
+Brokers...
+
+*** Teleprecense as an app, in app
+
+cscw - computer support for collaborative work. Interseting space to
+look at (since 80s)
+
+*** Multimedia as technology driver
+
+storage + streaming, content-related metadata, co-processor API model
+
+** What is data
+
+In the old days, just things you could put in sql database
+
+now there are more requirements to store things that aren't as well
+structured.
+
+metadata is just data about data... future is content-derived
+metadata.
+
+"When in the last year did I have that conversation with Ralph in the
+car?"
+
+* Social aspects in computing
+
+Relationships between devices and services.
+
+"Love and Sex With Robots"... congress :)
+
+* Network
+
+Connecting to remote user,s, data stores etc.
+
+OSC - auto discovery
+
+"Fail even better"
+
+* Future IO
+
+Multimedia used to mean A/V - but now not all have camera etc.
+
+
+* Tools
+
+How is software described and deliered
+
+
+What impacts developer productivity?
+
+Minimal and maximal languages
+
+** Visual languages
+
+"Block Diagram Compilers" 
+
+Incredible potential and challenges. 
+
+Domain specific visual editors.... 
+
+*** Perfect language
+
+Nouns, verbs, objects...  services compiled into a highly customised
+and converged
+
+** Lower quanlity etc...                                           :research:
+
+"OO Is Not Enough"
+
+programmer productivity hampered more by libraties, tools etc rather
+than languages
+
+* Sumary
+
+"The last revolution waas for people who use software... now for
+people who write it" 1992 ad!
+
+** Requirements analysis of programming lang                       :research:
+
+Requirements for an Experimental Programming Evnironment  etc 
+
+Spyder.
+
+** Smalltalk rant
+
+things I don't have in other languages.
+
+
