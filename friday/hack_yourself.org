@@ -1,0 +1,132 @@
+#+TITLE: hack yourself
+
+Getting credit cards from twitter
+
+http://twitter.com/needadebitcard
+
+* Hackers only need to get it right once
+
+e.g. BurgerKing twitter hacking
+
+Bad password choices
+
+Google indexes FTP.
+
+Can search for a web.config file 
+
+inurl:   filetype:config - asp.net web.config
+
+so many websites out there that expose the conf file
+
+File exposed via anonymous FTP open
+
+
+
+
+Could go to the URL, to the root of the website and start browsing
+around...  find the database backup!
+
+That's just read access - how many have write access?
+
+* Can you trust your apps?
+
+Most consumers have between 40 and 50.
+
+Probably half of them have serious vunrabilities in terms of their web
+security - talking to APIs.
+
+** Connecting to an api that discloses every users' password
+
+Exposes WSDL - tells you all the rest of the methods. One app had a
+"GetAllUsers" method returning passwords.
+
+
+"It's alright because our users don't use fiddler"
+
+Naive to think of as one system.
+
+** SSL
+
+Using SSL - bank, stopped doing certificate validation.
+
+Completely invalidates SSL. 
+
+** Finding this 
+
+Not just mobile apps, rich client apps.
+
+*** BA
+
+if you are member, you get wifi credentials.
+
+Using fiddler - change fiddler to port 8888, allow other devices to
+connect
+
+Find your IP address.
+
+Go to your I-thing... configure to use fiddler as a proxy.
+
+
+*** No access control
+
+- can paste urls directly into the browser
+
+Implicit trust by the developer that nobody can find these things.
+
+Access controls not just on client.
+
+
+** Password encryption
+
+Stack Overflow answers about encrypting data with base64!
+
+How should we be protecting our passwords?
+
+Don't want to encrypt, we want to hash. These terms used
+interchangeabley.
+
+Encryption - with a key + idea is you want to decrypt
+
+*** Hashing
+
+This is what you use for passwords. Cryptographic hash, 1-way
+deterministic algo
+
+Hash and compare. 
+
+Because it's deterministic, be able to crack it.
+
+Adding salt. hash(salt+password) = cipher
+
+hashcat  - 'legal' cracking software
+
+gpus are good at cracking hashes - generating lots of hashes
+
+dictionary attack - hashkiller.com.dic -  
+
+IO bound - but using consumer level hardware - 30 b a second sha1
+hashes
+
+*** Adaptive hashing algorithm
+
+
+Have to make it slow to make it hard.
+
+
+* How l33t do you have to be to really hack websites?
+
+** SQL injection
+
+Bobby Tables!
+
+
+Query string - id=3
+
+[SELECT * from product where id = ] TRUSTED
+[ 3 ] UNTRUSTED
+
++ Search for ASP 
+
+http://hackyourselffirst.troyhunt.com
+
+Havji sql execpetion tool

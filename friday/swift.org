@@ -1,0 +1,124 @@
+#+TITLE: Swift!
+
+"new language for future of Apple software development"
+
+Compared to other mobile dev languages.
+
+Language features.
+
+Swift Demo.
+
+* Language comparison
+
+** vs Object-C
+
+Goes back 25 years... NS = NextStep.
+
+ObjectiveC initially a C preprocessor. 
+
+** vs Java/Csharp
+
+Syntax similar to java, CSharp.
+
+type follows name in swift.
+
+** vs Scala
+
+Very similar + familiar! 
+
+Probably informed the design and implementation.
+
+* Type systems landscape                                           :research:
+
+"Type landscape" Odersky talk 
+
+Swift  went strongly in direction of strong, static typing
+
+* Language features
+
+** Immutability
+
++ let : constant 
++ var : variable
+
+** Nullables/optionals
+
+Types are not nilable at all - unless you explicitly specifying
+
+Avoids boilerplate
+
+#+BEGIN_SRC swift
+var str: Optional<string> = nil
+var str: string? = nil
+#+END_SRC
+
+** Generics
+
+** Basic Type inference
+
+"Basic" type inference (not declaring something a string if you assign
+it)
+
+** Complex type inference
+
+
+** "Lazy" keyword
+
+
+** Enumerations
+
+Enums with associated types
+
+Basically case classes in scala.
+
+** Structs
+
+All built in types are value types...
+
+** Functions n closures
+
+** Other features
+
+Tuples, overloading , named params, pattern mattching, currying...
+
+
+* Adopting Swift
+
+""""It depends"""" :)
+
+
+No interop with C++ or Assembly ... if you have libraries there.
+
+* Environment
+
+Automatic ref counting: tracks all references... circular references
+??? strong reference from parent to child - strong vs weak ownership
+ 
+Shared mem with cocoa classes.
+
+** Dev environment
+
+REPL <------- cool.
+
+Swift 'playground' - great learning tool.
+
+
+Live evaluation...  like lighttable.
+
+
+* Questions
+
+n c++ interop but you can use C.
+
+Apple said l syntax is n set in stone . Changes t l semantics or
+syntax possible.
+
+Do structs & functions change l way v write code?
+
+v can go all i and adopt functional. t does n force t.
+
+Interoperating m apple's built in.
+
+** Swift Z
+
+Thirty party library systems.
