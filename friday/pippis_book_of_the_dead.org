@@ -1,0 +1,156 @@
+#+TITLE: Pippi's book of the dead - seestrings
+
+Things are moving along, doing well, enthusiastic, delivering well, on
+time.
+
+All of a sudden, someone can't take it any more. 
+
+The problems we face on agile teams are not about agile practices or
+artefacts, it's all about people.
+
+When it comes to people, somewhere along l line there will be
+problems.
+
+Who e l people who cause the problems?
+
+The pass agg ones... the quiet ones.
+
+Low talkers, mumblers. Really hard to pin something o them.
+
+"Most problems on lean agile teams e people problems"
+
+Want to look t people problems i u way k e scientific.
+
+* Thousands d problem solving tools available
+
++ see practice clearly
++ 1000s of tools, siloed - can n move across all of them
++ Owe my teams more
+
+* "Visual Science Of Agile"
+
+When solving problems, come i m clear idea of what want, l outcomes.
+
+Laid out problems in horizontal strings so j could see things better.
+
+* Seestrings
+
++ string see
++ see string
+
+First build strings o what v need a see.
+
+** String 1 : View
+
+First string is called 'view'. 
+
+i k case , j chose view 'role'
+
+Looking t a roles 'PO' & 'PM'
+
+Couldn't just tell them they were bad.
+
+** String 2 : Triage
+
+Triage = sift,sort,separate,. Get data. Risk analysis backlog.
+
+Get some kind o data.
+
+J yh data d before. 
+
+Also j yh retrospective data.
+
+*** Risk backlog
+
+Should have a risk backlog - problems v likely a see.
+
+*** Role confusion
+
+Evidence suggested PO & PM roles y confusing
+
+Initial evidence.
+
+** String 3: Instrument
+
+i medical science/research u instrument e u testing tool.
+
+Can apply f research program based o l instruments v h.
+
+U instrument e like u instrument or survey.
+
+** String 4: Lab
+
+Build u lab t run l instrument & test your theory.
+
+Asked them t wear labcoats! N being cute - wanted level playing field,
+take seriously.
+
+Created trading cards a learn more about eachother.
+
+Technique called "TC". Good tools f teams q e geographically
+dispersed. Trading Cards.
+
+Pick somebody, ask them interview questions.
+
+Now created trading card for someone - you advocate for them. Make
+sure you are advocating for them.
+
+It's also a good idea for people who don't like each other.
+
+*** "Book of the Dead"
+
+Just hieroglypics...  
+
+Visual tool . 
+
+Get team together & ask them to state goal. 
+
+Pick 1 stream, row & describe what t means a them.
+
+*** R + R Mindmap
+
+role + responsibility mindmap.
+
+mindmap everything v do in your job. 
+
+Look f duplicates i l work.
+
+Both saw they y i charge o l work. 
+
+*** Who do                                                         :research:
+
+From "Gamestorming"
+
+List what they q & who should q t
+
+*** Pippi longstocking
+
+She sees things differently & q n listen a authority.
+
+F teams who e stuck, n moving.
+
+Q l most simple thing k works
+
+*** Haiku
+
+Put together the symbols & write u haiku
+
+... u work i progress.
+
+** Outcomes
+
+Know l outcomes v want a see i your seestring.
+
+Admitted a being u bully. Realised can n q everything.
+
+* String 5 : Campaign
+
+You have to start communicating this to someone.
+
+The things we e going a q going forward.
+
+* Seestrings help me see and run my world better
+
+* Seestrings for innovation
+
+
